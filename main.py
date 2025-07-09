@@ -1,11 +1,13 @@
 
-from utils.tomateDetector import TomateDetector  # Salve a classe acima como detector.py
+from tomateDetector import TomateDetector  # Salve a classe acima como detector.py
 from utils.localizaCamera import localizar_proxima_camera_externa
 
 def main(linhas):
     
     #input_source = monitor.monitor_and_get_video()
     input_source = localizar_proxima_camera_externa()
+    #input_source = "/media/josevaldo/E02A-3159/Ceagre/App/videos/video1.mp4"
+    #input_source = 
     if input_source is None:
         print("Encerrando: nenhuma câmera externa disponível.")
         return 

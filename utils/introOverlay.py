@@ -20,7 +20,7 @@ class IntroOverlay:
         if not ret:
             print("❌ Não foi possível capturar o primeiro frame.")
             return False"""
-        frame = cv2.imread("/media/josevaldo/E02A-3159/Ceagre/App/image/tomateId.png")
+        frame = cv2.imread("image/tomateId.png")
         
         if frame is None:
             raise RuntimeError("❌ Não foi possível carregar a imagem.")
